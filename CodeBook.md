@@ -18,9 +18,9 @@
         # Final data set for step 4
                 onlyMeanAndStd: extracts only the mean and standard deviation measurements from allCombined
         
-        
-        
-        
+        # Create second data set
+                fourMelt: melts onlyMeanAndStd with "subjects" and "activities" as the ids and the remaining variables as measures
+                finalData: casts fourMelt by subjects and activities and averages the measure variables.
         
 # The data in these files is initially extracted from the Samsung data which can be summarized as follows:
 

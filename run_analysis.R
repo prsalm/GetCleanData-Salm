@@ -126,8 +126,9 @@
 
 ## Create second data set with avg of each variable for each activity and each subject
 
-                
+                fourMelt <- melt(onlyMeanAndStd,id=c("subjects","activities"),measure.vars=3:68)
+                finalData <- dcast(fourMelt, subjects+activities ~ variable,mean)
 
 ## Write text file
-                
+                write.table(finalData,file="finalData.txt",row.name=FALSE)
                 

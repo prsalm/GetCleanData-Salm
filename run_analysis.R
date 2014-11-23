@@ -11,6 +11,7 @@
 ## 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for 
 ##    each activity and each subject.
 ## They are completed in the following order in this script.  (1), (3), (4), (2), (5)
+## Lastly, it generates a .txt file with the output from (5) for submission to the class.
 
 ## load all data
         # load key data from files
@@ -122,8 +123,9 @@
                                       "fBodyBodyAccJerkMag-std()"=allCombined[,"fBodyBodyAccJerkMag-std()"],
                                       "fBodyBodyGyroMag-std()"=allCombined[,"fBodyBodyGyroMag-std()"],
                                       "fBodyBodyGyroJerkMag-std()"=allCombined[,"fBodyBodyGyroJerkMag-std()"])  
-## Create second data set with avg of each variable for each activity
-## and each subject
+
+## Create second data set with avg of each variable for each activity and each subject
+
                 
 
 ## Write text file
